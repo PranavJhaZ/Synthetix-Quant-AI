@@ -642,7 +642,7 @@ async function runAnalysis() {
   }, 1000);
 
   try {
-    const res = await fetch(window.API_URL || 'http://localhost:5000/analyze', {
+    const res = await fetch(window.API_URL || 'https://synthetix-quant-ai.onrender.com/analyze', {
       method:  'POST',
       headers: {'Content-Type':'application/json'},
       body:    JSON.stringify({ticker, exchange: exch}),
